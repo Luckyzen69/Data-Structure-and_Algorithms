@@ -90,8 +90,8 @@ As per above illustration, following are the important points to be considered.
   printf(index[8]);
    ``` 
 
-    #### output : 1
-    As from above example, we can see that the  value at index 8 is '1'. 
+    #### output : 5
+    As from above example, we can see that the  value at index 8 is '5'. 
 
     ## Basic Opertions
     Following are the basic operations supported by an array.
