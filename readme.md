@@ -101,42 +101,8 @@ Note: 1st element is present at the 0th index, 2nd element is present at the 1st
   printf(index[8]);
   ```
 
-      #### output : 1
-      As from above example, we can see that the  value at index 8 is '1'.
-
-      ### Initialization of Arrays
-       Array can be initialized in C programming language in the compile time or in the run time.
-
-       ### Initialization of Array in Compile Time
-       Initialization of Array at compile means declaring the elements of array before running the code at the time of declaration which can be done as follow:
-
-   ```c
-    #include<stdio.h>
-  int main()
-  {
-  //integer array
-  int student[5] = {60, 70, 65, 80, 85};
-  //float array
-  float student[5] = {60.0, 75.5, 80.0, 67.0, 83.5};
-  return 0;
-  }
-  ```
-  ### Initialization of Array in Run Time
-  Initialization of Array at Run Time means declaring the elements of array after running the code. Here, elements are taken from user.
-we can also set the the size of array when we initialize array at run time.
-   
-   ```c
-   #include<stdio.h>
-int main()
-{
-    int n;                          //size of array
-    scanf("%d",&n);
-    int student[n];                 //array
-    for(int i=0; i<n; i++)
-        scanf("%d",&student[i]);
-    return 0;
-}
-```
+    #### output : 1
+    As from above example, we can see that the  value at index 8 is '1'. 
 
       ## Basic Opertions
       Following are the basic operations supported by an array.
