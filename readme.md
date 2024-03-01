@@ -401,3 +401,92 @@ are the important terms to understand the concept of Linked List.
 - LinkedList − A Linked List contains the connection link to the first link called first.
 
 ### Linked List Representation
+Linked list can be visualized as a chain of nodes, where every node points to the next 
+node. 
+
+As per the above illustration, following are the important points to be considered. 
++ Linked List contains a link element called first. 
++ Each link carries a data field(s) and a link field called next. 
++ Each link is linked with its next link using its next link. 
++ Last link carries a link as null to mark the end of the list. 
+
+### Types of Linked List 
+Following are the various types of linked list. 
++ Simple Linked List − Item navigation is forward only. 
++ Doubly Linked List − Items can be navigated forward and backward. 
++ Circular Linked List − Last item contains link of the first element as next and 
+the first element has a link to the last element as previous.
+
+#### Basic Operations 
+Following are the basic operations supported by a list. 
++ Insertion − Adds an element at the beginning of the list. 
++ Deletion − Deletes an element at the beginning of the list. 
++ Display − Displays the complete list. 
++ Search − Searches an element using the given key. 
++ Delete − Deletes an element using the given key.
+
+
+
+## Binary Tree
+A binary tree consists of a finite set of nodes that is either empty, or consists of one 
+specially designated node called the root of the binary tree, and the elements of two 
+disjoint binary trees called the left subtree and right subtree of the root. 
+Note that the definition above is recursive: we have defined a binary tree in terms of 
+binary trees. This is appropriate since recursion is an innate characteristic of tree 
+structures.
+
+### Binary Tree Terminology
+Tree terminology is generally derived from the terminology of family trees (specifically, 
+the type of family tree called a lineal chart). 
++ Each root is said to be the parent of the roots of its subtrees. 
++ Two nodes with the same parent are said to be siblings; they are the children of 
+their parent. 
++ The root node has no parent. 
++ A great deal of tree processing takes advantage of the relationship between a 
+parent and its children, and we commonly say a directed edge (or simply 
+an edge) extends from a parent to its children. Thus edges connect a root with 
+the roots of each subtree. An undirected edge extends in both directions between 
+a parent and a child.
++ Grandparent and grandchild relations can be defined in a similar manner; we 
+could also extend this terminology further if we wished (designating nodes as 
+cousins, as an uncle or aunt, etc.)
+
+### Other Tree Terms 
+   The number of subtrees of a node is called the degree of the node. In a binary 
+tree, all nodes have degree 0, 1, or 2. 
++ A node of degree zero is called a terminal node or leaf node. 
++ A non-leaf node is often called a branch node. 
++ The degree of a tree is the maximum degree of a node in the tree. A binary tree 
+is degree 2. 
++ A directed path from node n1 to nk is defined as a sequence of nodes n1, n2, 
+..., nk such that ni is the parent of ni+1 for 1 <= i < k. An undirected path is a 
+similar sequence of undirected edges. The length of this path is the number of 
+edges on the path, namely k – 1 (i.e., the number of nodes – 1). There is a path 
+of length zero from every node to itself. Notice that in a binary tree there is 
+exactly one path from the root to each node. 
++ The level or depth of a node with respect to a tree is defined recursively: the level 
+of the root is zero; and the level of any other node is one higher than that of its 
+parent. Or to put it another way, the level or depth of a node ni is the length of the 
+unique path from the root to ni. 
++ The height of ni is the length of the longest path from ni to a leaf. Thus all leaves 
+in the tree are at height 0. 
++ The height of a tree is equal to the height of the root. The depth of a tree is equal 
+to the level or depth of the deepest leaf; this is always equal to the height of the 
+tree. 
++ If there is a directed path from n1 to n2, then n1 is an ancestor of n2 and n2 is a 
+descendant of n1. 
+
+### Special Forms of Binary Trees 
+There are a few special forms of binary tree worth mentioning. 
+If every non-leaf node in a binary tree has nonempty left and right subtrees, the tree is 
+termed a strictly binary tree. Or, to put it another way, all of the nodes in a strictly binary 
+tree are of degree zero or two, never degree one. A strictly binary tree with N leaves 
+always contains 2N – 1 nodes. 
+
+Some texts call this a "full" binary tree. 
+A complete binary tree of depth d is the strictly binary tree all of whose leaves are at 
+level d. 
+
+The total number of nodes in a complete binary tree of depth d equals 2d+1 – 1. Since all 
+leaves in such a tree are at level d, the tree contains 2d leaves and, therefore, 2d - 1 
+internal nodes.
