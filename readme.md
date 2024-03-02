@@ -490,3 +490,35 @@ level d.
 The total number of nodes in a complete binary tree of depth d equals 2d+1 – 1. Since all 
 leaves in such a tree are at level d, the tree contains 2d leaves and, therefore, 2d - 1 
 internal nodes.
+
+### Diagram of complete binary tree
+![Binary tree ](./images/binary.png)
+
+A binary tree of depth d is an almost complete binary tree if: 
++ Each leaf in the tree is either at level d or at level d – 1. 
++ For any node nd in the tree with a right descendant at level d, all the left 
+descendants of nd that are leaves are also at level d.
+
+### Diagram of almost complete binary tree
+![Almost complete Binary tree ](./images/almostbinary.png)
++ An almost complete strictly binary tree with N leaves has 2N – 1 nodes (as does any 
+other strictly binary tree). 
++ An almost complete binary tree with N leaves that is not strictly binary has 2N nodes. 
++ There are two distinct almost complete binary trees 
+with N leaves, one of which is strictly binary and one of which is not. 
++ There is only a single almost complete binary tree with N nodes. 
++ This tree is strictly binary if and only if N is odd. 
+
+## Representing Binary Trees in Memory 
+
+### Array representation
+For a complete or almost complete binary tree, storing the binary tree as an array may 
+be a good choice. 
+Storing a complete or almost complete binary tree in an array involves placing the root at index 0 and, for each node at index k, its left child is at 2k+1 and the right child at 2k+2. This efficient array representation minimizes wasted space for well-structured trees.
+![Array representation of binary tree ](./images/arrayrep.png)
+ For example, the 
+almost complete binary tree shown in above diagram  can be stored in an array like so. 
+However, if this scheme is used to store a binary tree that is not complete or almost 
+complete, we can end up with a great deal of wasted space in the array. 
+
+
